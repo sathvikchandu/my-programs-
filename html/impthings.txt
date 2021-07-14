@@ -1,0 +1,169 @@
+https is secured by ssl(secure socket layer) or tls(transport securoty layer)
+seurity certificates has to be purchased for protecting the website
+
+this is for inbpound mail protocol 
+the gmail receiver use pop3 protocol for receiving mail from the server but this is not preferred as the moment receiver downloads the 
+message, it gets deleted in the server
+
+do imap protocol is used
+
+for outbound, after the mail receives the server, it goes to receipents mail server and then the user can download them
+
+while creating your website, you need to register your domain name, websites like godaddy sends requet to ICANN
+(internet corporations for assigned names and numbers ) if the name is unique then they add our domain name. 
+
+we need a web server to communicate with both front end and back end
+
+
+sometimes js wont work at if places at the head because, it wants to access elements before running the boy script,
+so we need to add a a word called defer after initiating script tag which tells that to run after running the body.
+
+we also have async which runs the script at the very moment
+
+/* if you want your variables to be hidden from being global then you have to use them in function
+(function(){
+    var add=5 //howwvwer, if you remove the var, it becomes global and can be accessible
+})(); */
+
+
+
+we different browsers that run js. there is a standard known as ecma script(es) that these browsers
+follow while running js
+
+there is a measure to measure how these browers are close to ecma script, and theere is a test to 
+analyse things is called test 262 and company made this are tc39
+
+
+
+
+
+
+html:
+for creating an ordered list you mention the type and give stylr attributes:
+<ol type="I or i or a or A or...">
+
+<ul style="list-style-type:disc or circle or square or..."
+for images we have margin tags where we can add the margins
+
+line-height gives you the space b/w 2 lines
+
+----------------------------------------------------------------------------------
+HTML TAGS AND USES
+
+ADDRESS
+used to contact information
+syntax:
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+
+AREA
+The <area> tag defines an area inside an image map (an image map is an image with clickable areas).
+
+<area> elements are always nested inside a <map> tag.
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The map and area elements</h1>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="399,390,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+</body>
+</html>
+
+ARTICLE
+
+The <article> tag specifies independent, self-contained content.
+
+<h1>The article element</h1>
+
+<article>
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+  <h2>Mozilla Firefox</h2>
+  <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+
+ASIDE
+The <aside> tag defines some content aside from the content it is placed in.
+
+The aside content should be indirectly related to the surrounding content.
+
+aside {
+  width: 40%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+</style>
+</head>
+<body>
+
+
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside> 
+<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+AUDIO
+plays music using some options
+
+<audio controls autoplay loop>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+BDI
+BDI stands for Bi-Directional Isolation.
+
+The <bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it.
+
+BDO
+BDO stands for Bi-Directional Override.
+
+The <bdo> tag is used to override the current text direction.
+
+<p>This paragraph will go left-to-right.</p>  
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p> 
+
+CITE
+
+used to cite an author,....
+The <cite> tag defines the title of a creative work 
+
+CODE
+The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+
+<samp>	Defines sample output from a computer program
+<kbd>	Defines keyboard input
+<var>	Defines a variable
+<pre>	Defines preformatted text
+
+DEL
+used to delete and insert the text
+A text with a deleted part, and a new, inserted part:
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>

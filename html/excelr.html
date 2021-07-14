@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-css</title>
+    <style>
+      header div{
+        flex:1;
+      }
+      header nav{
+        flex: 1;
+      }
+      header{
+        border-bottom: 1px solid blue; height: 50px;display: flex;background-color: aqua;
+      }
+      header div:nth-child(2){
+        flex:1;
+      }
+      header nav ul li{
+        flex:1;
+        list-style: none;
+      }
+      header nav ul li a{
+        text-decoration: none;
+        font-size: x-large;
+        color: brown;
+      }
+    </style>
+</head>
+<body>
+  <section style="border: 1px solid red;;">
+    <header  >
+      <div >
+        <img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bE4-QaUiLkBg8kTuIZxIWwHaEZ%26pid%3DApi&f=1" alt="olllo" width="100px" height="50px">
+      </div>
+
+      <div class="mywish">
+        <img src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bE4-QaUiLkBg8kTuIZxIWwHaEZ%26pid%3DApi&f=1" alt="olllo" width="100px" height="50px">
+      </div>
+      
+      <nav > 
+        <ul style="display:flex;">
+          <li><a href="">home</a></li>
+          <li><a href="">home</a></li>
+          <li><a href="">home</a></li>
+          <li ><a href="">home</a></li>
+        </ul>
+      </nav>
+
+    
+    
+    
+    </header>
+    <div style="border-bottom: 1px solid red; height: 40px;">Slider</div>
+    <div style="display: flex;height: 450px;">
+      <div style="flex: 1;"><p>Left side bar</p>
+        <ul >
+          <li><a href="">home</a></li>
+          <li><a href="">home</a></li>
+          <li ><a href="">home</a></li>
+          <li ><a href="">home</a></li>
+        </ul>
+      </div>
+      <div style="flex: 2;" border-left:1px solid green ;border-right:1px solid green ;">Main content</div>
+      <div style="flex: 1;">Right</div>
+    </div>
+  <footer style="border-top: 1px solid black ;height: 75px;">Bottom</footer>
+  </section>  
+</body>
+</html>

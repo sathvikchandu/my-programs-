@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<form name="recruitment form" action="send.php" method="post">
+    <table width="600" border="1" cellspacing="2" cellpadding="2">
+       <tr>
+         <td>Employment application</td>
+         <td></td>
+       </tr>
+       <tr>
+         <td>First name</td>
+         <td><input type="text" name="fname" maxlength="50" /></td>
+       </tr>
+       <tr>
+         <td>Last name</td>
+         <td><input type="text" name="lname" maxlength="50" /></td>
+       </tr>
+       <tr>
+         <td>Experience</td>
+         <td>
+             <select name="EXOERIENCE">
+                 <option value="fr">Freshie</option>
+                 <option value="2y">2yrs. experience</option>
+                 <option value="5y">5yrs. experience</option>
+
+             </select>
+   
+
+         
+         </td>
+       </tr>
+       <tr>
+         <td>Email</td>
+         <td>
+            <input type="text" name="email" />
+         </td>
+         
+         
+       </tr>
+       <tr>
+         <td>Job type</td>
+         <td>
+             <input type="checkbox" name="part"/>Part-time
+             <input type="checkbox" name="full"/>Full-time
+         </td>
+       </tr>
+       <tr>
+         <td>Current status</td>
+         <td>
+             <input type="radio" name="unemp" value="umem"/>Unemployed
+             <input type="radio" name="emp" value="em"/>employed
+             <input type="radio" name="stu" value="student"/>student
+         </td>
+         
+       </tr>
+       <tr>
+         <td>Additional comments</td>
+         <td>
+             <textarea name="comments" rows="5" cols="20"></textarea>
+         </td>
+       </tr>
+       <tr>
+         <td></td>
+         <td>
+             <input type="submit" value="submit" name="submit"/>
+             <input type="reset" value="reset" name="reset"/>
+         </td>
+       </tr>
+     </table>
+   
+   </form> 
+</body>
+</html>

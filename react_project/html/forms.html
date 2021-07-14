@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <style>
+        #form{
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #gender{
+            margin-left: 20px;
+        }
+        #images{
+            size: 500px 500px;
+            margin-left: 65px;
+            margin-top: 30px;
+            margin-right: auto;
+            
+
+        }
+        .imgs{
+            width: 50px;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-right: 5px;
+            height: 50px;
+        }
+        .inputs{
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="text-align: center;">Registration form</h1>
+    <form id="form" method="GET">
+        <section id= images>
+            <a href="https://google.com" target="_blank"><img class="imgs" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Zvx3RaITwY32zYeZPhtP8wAAAA%26pid%3DApi&f=1" alt="google"></a>
+            <a href="https://github.com" target="_blank"><img class="imgs" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.LamgOwa_skeA3uPEuKeUawHaHa%26pid%3DApi&f=1" alt="google2"></a>
+
+        </section>
+        <br>
+        <br>
+        
+        <input class= "inputs" type="text" placeholder="Enter your name">
+        <input class= "inputs" type="email" placeholder="Enter your email">
+        <input class= "inputs" type="tel" name="telphone" placeholder="888 888 8888"  maxlength="10"  title="Ten digits code" required/>    
+        <input list="gender" name="browser" id="browser">
+        <datalist id="gender">
+          <option value="Male">
+          <option value="Female">
+          <option value="other">
+          
+        </datalist>
+         
+
+    </form>
+</body>
+</html>

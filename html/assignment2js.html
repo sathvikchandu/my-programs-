@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversing no. in js</title>
+
+    <style>
+        body {
+          background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wKQauObvaxbxBs9cuzAbOwHaEo%26pid%3DApi&f=1');
+        }
+        </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;color: red;">Reversing The Number</h2>
+
+
+    <script>
+    function reverse()
+    {
+    var x,y,z,temp=0;
+     
+    y=Number(document.getElementById("demo").value);
+     
+    z=y;
+    while(y>0)
+    {
+    x=y%10;
+    y=parseInt(y/10);
+    temp=temp*10+x;
+    }
+    alert(temp);
+    }
+    </script>
+    </head>
+    <body>
+    <h2 >Enter a Number to find it's reverse: <input id="demo"></h2>
+    <button onclick="reverse()">Check</button><br>
+    
+    
+
+</body>
+</html>

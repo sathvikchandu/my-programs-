@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:70%;
+}
+
+/* Images used */
+.img1 { background-image: url("https://echallan.tspolice.gov.in/publicview/images/Picture6-min.jpg"); }
+.img2 { background-image: url("https://echallan.tspolice.gov.in/publicview/images/Picture7-min.jpg"); }
+.img3 { background-image: url("https://echallan.tspolice.gov.in/publicview/images/Picture1-min.jpg"); }
+.img4 { background-image: url("https://echallan.tspolice.gov.in/publicview/images/Picture2-min.jpg"); }
+.img5 { background-image: url("https://pbs.twimg.com/media/EJ3hOs_UcAEZvbC.jpg"); }
+.img6 { background-image: url("https://pbs.twimg.com/media/EJ3hOs_UcAEZvbC.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color:blueviolet; /* Fallback color */
+   /* Black w/opacity/see-through */
+  color: red;
+  font-weight: bold;
+  font-size: xx-large;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+<form action="dataentry.php">
+<div class="bg-text">
+	 <p>To enter the challan click below</p><button class="btn" value="Vehicle number">Vehicle number</button>
+     <p>To enter the challan click below</p></h3><button class="btn" value="Vehicle number">Vehicle number</button>
+</div>
+
+</form>
+</body>
+</html>

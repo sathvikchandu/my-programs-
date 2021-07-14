@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent login form</title>
+
+    
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+      
+<form name="parent login form" action="send.php" method="post">
+    <table width="800" border="1" cellspacing="2" cellpadding="2">
+       <tr>
+         <td>Parent login</td>
+         <td></td>
+       </tr>
+       <tr>
+         <td>Student name</td>
+         <td><input type="text" name="fname" maxlength="50" /></td>
+       </tr>
+       <tr>
+         <td>student Id-number</td>
+         <td><input type="number" name="lname" min="100000" max="100100" /></td>
+       </tr>
+       <tr>
+         <td>Gender</td>
+         <td>
+             <select name="gender">
+                 <option value="ma">Male</option>
+                 <option value="fe">Female</option>
+                 <option value="ot">Others</option>
+
+             </select>
+   
+
+         
+         </td>
+       </tr>
+       <tr>
+         <td>Email</td>
+         <td>
+            <input type="text" name="email" />
+         </td>
+         
+         
+       </tr>
+      
+       <tr>
+         <td> Parent employment status</td>
+         <td>
+             <input type="radio" name="unemp" value="umem"/>Unemployed
+             <input type="radio" name="emp" value="em"/>employed
+             
+         </td>
+         
+       </tr>
+
+       <tr>
+        <td>Annual Income</td>
+        <td>
+            <input type="radio" name="unemp" value="umem"/>Less than 100000
+            <input type="radio" name="emp" value="em"/>Between 100000 and 400000
+            <input type="radio" name="stu" value="student"/>Greater than 400000
+        </td>
+        
+      </tr>
+       
+       <tr>
+         <td></td>
+         <td>
+             <input type="submit" value="login" name="login"/>
+             <input type="reset" value="reset" name="reset"/>
+         </td>
+       </tr>
+     </table>
+   
+   </form> 
+</body>
+</html>

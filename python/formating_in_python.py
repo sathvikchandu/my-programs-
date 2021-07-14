@@ -26,7 +26,7 @@ print('{:=5d}'.format((- 23)))
 data = {'first': 'Hodor', 'last': 'Hodor!'}
 print('{first} {last}'.format(**data))
             # the above one can also be written as
-print('{first} {last}'.format(first='Hodor', last='Hodor!'))
+print('{first} {last}'.format(first='Hodor', last='Hodor!')) #hello 
 
 #New style formatting allows even greater flexibility in accessing nested data structures.
 

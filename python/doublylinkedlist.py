@@ -72,6 +72,104 @@ class DoublyLinkedList:
 
 
             cur=cur.next
+        
+    def delete(self,key):
+        cur=self.head
+        while cur:
+            if cur.data==key and cur==self.head:
+                if not cur.next:
+                    cur=None
+                    self.head=None
+                    return
+                else:
+                    nxt=cur.next
+                    cur.next= None
+                    nxt.prev=None
+
+                    cur=None
+                    self.head=nxt
+                    return
+            
+            elif cur.data==key:
+                if cur.next:
+                    nxt= cur.next
+                    prev= cur.prev
+                    prev.next=nxt
+                    nxt.prev=prev
+                    cur.next=None
+                    cur.prev=None
+                    cur=None
+                    return
+                else:
+                    prev=cur.prev
+                    prev.next=None
+                    cur.prev=None
+                    cur=None
+                    return
+            cur=cur.next
+    
+    def reverse(self):
+        tmp = None
+        cur = self.head
+        while cur:
+            tmp = cur.prev
+            cur.prev = cur.next
+            cur.next = tmp
+            cur = cur.prev
+        if tmp:
+            self.head = tmp.prev
+
+    def deletenode(self,node):
+        cur=self.head
+        while cur:
+            if cur==node and cur==self.head:
+                if not cur.next:
+                    cur=None
+                    self.head=None
+                    return
+                else:
+                    nxt=cur.next
+                    cur.next= None
+                    nxt.prev=None
+
+                    cur=None
+                    self.head=nxt
+                    return
+            
+            elif cur==node:
+                if cur.next:
+                    nxt= cur.next
+                    prev= cur.prev
+                    prev.next=nxt
+                    nxt.prev=prev
+                    cur.next=None
+                    cur.prev=None
+                    cur=None
+                    return
+                else:
+                    prev=cur.prev
+                    prev.next=None
+                    cur.prev=None
+                    cur=None
+                    return
+            cur=cur.next
+
+
+    def remduplicates(self):
+        seen={}
+        cur = self.head
+        if cur.data not in seen:
+            seen[cur.data]=1
+            cur = cur.next
+        else:
+            nxt = cur.next
+            self.deletenode(cur)
+            cur=nxt
+
+
+    
+
+
 
 
 
@@ -82,9 +180,19 @@ dllist.append(1)
 dllist.append(2)
 dllist.append(3)
 dllist.append(4)
-dllist.prepend(5)
+
+dllist.append(1)
+dllist.append(2)
+dllist.append(3)
+dllist.append(4)
+
 
 dllist.addafter(1,9)
 dllist.addbefore(4,10)
+dllist.delete(2)
+dllist.remduplicates()
 
+
+
+dllist.reverse()
 dllist.print_list()

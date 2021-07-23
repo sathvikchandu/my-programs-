@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute</title>
+
+
+    <style>
+        .form{
+            border-radius: 30px;
+            background-color: rebeccapurple;
+            padding: 20px;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+        input[type=text],input[type=password],select{
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+        div{
+            padding: 20px;
+        }
+
+        input[type=submit] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+   <h1 style="text-align:center;color:red">Contribute</h1>
+   <h2 style="text-align:center">Please fill the form so that our team can contact you</h2> 
+
+   <h1 style="text-align: center;">Registration Form</h1><br>
+
+    <div class="form">
+        <form onsubmit="return Details_and_Check_password()">
+
+            <label for="Username">Username:</label><br>
+            <input type="text" id="username" name="Username" placeholder="Enter your name..." required><br>
+
+            <label for="Password">Password:</label><br>
+            <input type="password" name="Password" placeholder="Enter your password..." id="password" required><br>
+            <span id = "lengthmessage" style="color:red"> </span><br>
+            <input type="checkbox" name="click this checkbox to view your password"  onclick="viewpassword()"> Show Password<br>
+            <br>
+
+            <label for="Confirm Password">Confirm Password:</label><br>
+            <input type="password" name="ConfrimPassword"  placeholder="Confirm your password..." id="confirmpassword" required><br>
+            <span id = "donotmatchmessage" style="color:red"> </span><br>
+
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" name="Name" placeholder="Enter your name..." required><br>
+            <br>
+            Gender:
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+
+            <label for="other">other</label>
+            <input type="radio" id="other" name="gender" value="other" required><br>
+            <br>
+            
+            <label for="mobile">Mobile number </label>
+            <input type="text" id="mobile" name="mobile"  required><br>
+
+            <input type="submit" name="submit" id="submit" value="submit">
+        </form>
+    </div>
+
+    <script>
+        function viewpassword(){
+            var x = document.getElementById("password");
+            if (x.type === "password"){
+                x.type = "text";
+            } else {
+                x.type = "password";
+
+            }
+        }
+
+        function Details_and_Check_password(){
+            var Username = document.getElementById('username').value;
+            var pwrd = document.getElementById('password').value;
+            var cpwrd = document.getElementById('confirmpassword').value;
+            var Name = document.getElementById('Name').value;
+            var Male = document.getElementById('male');
+            var Female = document.getElementById('female');
+            var Other = document.getElementById('other');
+            
+            var mobile = document.getElementById('profession').value;
+
+            if(pwrd.length < 8) {  
+                document.getElementById("lengthmessage").innerHTML = "**Password length must be atleast 8 characters";  
+                return false;  
+            }  
+
+            if(pwrd != cpwrd){
+                document.getElementById("donotmatchmessage").innerHTML = "**Passwords do not match";
+                return false;
+            }
+            else{
+                document.write("<h1>Registrartion Form Details</h1>")
+                document.write('Username: ' + Username + '<br>');
+                document.write('Name: ' + Name + '<br>');
+               
+                if(Male.checked){
+                    document.write("Gender: Male" +  "<br>");
+                }
+                else if(Female.checked){
+                    document.write("Gender: Female" + "<br>");
+                }
+                else if(Other.checked){
+                    document.write("Gender: Other" + "<br>");
+                }
+
+                
+                document.write("Number: " + number + "<br>");
+            }
+           
+        }
+
+       
+       
+    </script>
+</body>
+</html>

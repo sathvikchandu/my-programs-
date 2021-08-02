@@ -1,4 +1,4 @@
-
+"""
 file1 = open("myfile.txt", "w")
 L = ["Hello, I am sathvik"]
   
@@ -30,7 +30,26 @@ for i in l3:
     stri+=op
 print(l)
 print(stri)
+"""
 
+for i in range(int(input())):
+    x,y=input().split()
+    x= int(x)
+    y= int(y)
+    ans=0
+    if x%2==0 and y%2==0:
+        ans=0
+    
+    elif x%2==0 and y%2==1 :
+        ans=1
+    elif x%2==1 and y%2==0:
+        ans=1
+    else:
+        ans=2
+    print(ans)
+    
+    
+        
 
 
 

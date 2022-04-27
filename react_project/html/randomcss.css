@@ -1,0 +1,97 @@
+section{
+    display: inline-block;
+    width: 70%;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+aside{
+    display: inline-block;
+    width: 25%;
+    background-color: coral;
+    padding: 16px;
+   border-radius: 13px;
+   box-shadow: 0px 2px 5px #aaa ;
+
+    
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.imgcontain img{
+    width: 100%;
+
+    
+}
+
+@media screen and (max-width: 780px){
+    main{
+        padding: 2%;
+
+    }
+
+    section{
+        display: inline-block;
+        width: 70%;
+
+    }
+    p{
+        font-size: 8px;
+        font-family: sans-serif;
+        line-height: 1.2;
+    }
+
+    aside{
+        display: inline-block;
+        width: 25%;
+        background-color: coral;
+        padding: 16px;
+        border-radius: 13px;
+        box-shadow: 0px 2px 5px #aaa ;
+    }
+    
+}
+
+
+.flex-item:nth-child(even){
+    background-color: orangered;
+    align-self: center;
+
+}
+.flex-item:nth-child(even){
+    background-color: red;
+    align-self: flex-start;
+    margin-top: 20px;
+
+}
+
+
+.flex-item{
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    font-size: x-large;
+    background-color: coral;
+    text-align: center;
+    padding-top: 15px;
+    
+ 
+    
+}
+
+.master{
+    height: 500px;
+    width: 100%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+}
+     
+
+

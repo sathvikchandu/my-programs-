@@ -1,9 +1,5 @@
-for _ in range(int(input())):
-    
-    n= int(input())
-    l1= list(map(int,input().split()))
-    l2= list(map(int,input().split()))
-    for i in range(1,len(l1)):
-        l1[i]=l1[i]-l1[i-1]
-    print(l1)
-        
+key=[3,4,5,6,7,8,9,1,13,32]
+n=8
+
+key_list = [key[i:i + n] for i in range(0, len(key), n)] 
+print(key_list)

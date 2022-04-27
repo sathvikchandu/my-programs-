@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="new_semantic.css" type="text/css">
+</head>
+<body>
+    <div id="border-box">
+        <h2 style="text-align: center;">Application form</h2>
+        <br>
+
+        <div class="row">
+            <div class="column">
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WVH5CcRwH3AUIN3a1ugWdQHaHa%26pid%3DApi&f=1"alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WVH5CcRwH3AUIN3a1ugWdQHaHa%26pid%3DApi&f=1" alt="Forest" style="width:100%">
+              </div>
+            
+        </div>
+
+
+        
+        <br>
+        <br>
+        <label for="name" style="margin-left: 100px;">Name :</label>
+        <input class = "box" type="text" id="name" name="name">
+        <br>
+        <br>
+        <label for="fname" style="margin-left: 55px;">Father Name :</label>
+        <input class = "box" type="text" id="fname" name="fname">
+    
+        <br>
+        <br>
+        <label for="mname" style="margin-left: 50px;">Mother Name :</label>
+        <input class = "box" type="text" id="mname" name="mname">
+        <br>
+        <br>
+        <label for="dob" style="margin-left: 56px;">Date of Birth :</label>
+        <input type="date" id="dob" name="dob">
+        
+        <br>
+        <br>
+
+        <label for="course" style="margin-left: 100px;">course :</label>
+        <select id="course" name="course">
+            <option value="btech">B.Tech</option>
+            <option value="mtech">M.Tech</option>
+            <option value="phd">PhD</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="email" style="margin-left: 100px;">Email :</label>
+        <input class = "box" type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="phone" style="margin-left: 100px;">Phone :</label>
+        <input class = "box" type="tel" id="phone" name="phone" placeholder="888 888 8888"  maxlength="10"  title="Ten digits code" required/>
+        
+        <br>
+        <br>
+        <div id="submit">
+            <input type="submit" id="submit" name="submit" value="Submit">
+        </div>
+    </div>
+
+
+</body>
+</html>

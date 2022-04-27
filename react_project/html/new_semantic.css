@@ -1,0 +1,220 @@
+/* this is called a decendant selector and is used to refer to 2 id or classes and will allow to style at a time*/
+/*
+article p{
+    font-size: 25px;
+    background-color: brown;
+}
+*/
+
+/* we also have another method called the child selector, in this if we have div tag in a p rag, then the 
+child selector will refer to the div tag inside the p tag */
+/*
+p + div{
+    font-size: 25px;
+    background-color: brown;
+}
+*/
+
+/* general sibling selector: it selects all the selectors that are realted to the mentioned selector */
+/*
+div ~ p{
+    font-size: 25px;
+    background-color: brown;
+}
+*/
+
+/* tesla form
+
+#border-box{
+    height: 700px;
+    width: 500px;
+    background-color: royalblue;
+    margin-left: 430px;
+}
+.label{
+    margin-left: 100px;
+
+}
+#submit{
+    margin-left: 200px;
+}
+
+#submit:hover{
+    color: green;
+}
+
+.image{
+    height: 50px;
+    width: 50px;
+    margin-left: 200px;
+}
+.imag{
+    height: 50px;
+    width: 50px;
+    margin-left: 300px;
+}
+
+.box{
+    width: 200px;
+}
+
+.box:focus{                         
+    background-color: lightblue;
+    
+
+}
+
+.column {
+    float: left;
+    margin-left: 100px;
+    height: 50px;
+    width: 50px;
+  }
+  
+   Clear floats after image containers 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+also have a :diabled field where we can disable and we can also add :required here*/
+
+
+/*
+article > p:first-of-type{
+    background-color: lightcoral;
+}
+
+article > p:nth-child(2){
+    background-color: lightcoral;
+}
+*/
+/*
+article > p:first-child::first-line{
+    background-color: lightcoral;
+}
+
+article > p::selection{
+    background-color: red;
+}
+*/
+/*
+article >p{
+    background-color: lightcoral;
+}
+
+article > p::before{
+    content: '';
+}
+
+#uiback{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.y-5NfzZziLCFqAOdWQWF9wHaEK%26pid%3DApi&f=1') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+
+#uiback{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,skyblue, orange);
+}
+*/
+body{
+    font-family: sans-serif,Arial;
+}
+.item{
+    font-size: 13px;
+    color: rgba(0,0,0,87);
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    margin-right: 16px;
+}
+
+.material-icons{
+    position: relative;
+    margin-right: 16px;
+}
+
+.item:hover{
+    
+    text-decoration: underline;
+}
+
+.ppic{
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+}
+
+nav{
+    text-align: right;
+}
+
+section{
+    text-align: center;
+    margin-top: 170px;
+}
+
+.mic{
+    height: 32px;
+    width: 32px;
+
+}
+
+#sbox{
+    width: 576px;
+    
+    
+    font-size: 13px;
+    padding: 14px;
+    border-radius: 24px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.18rrEbJEKr1yBPo1qemYWAHaHa%26pid%3DApi&f=1');
+    background-size: 30px 30px;
+    
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+}
+#sbox:focus{
+    box-shadow: 0px 1px 6px 0px rgba(100,200,250,0.75);
+    border-color: crimson;
+}
+
+#imput-wrapper{
+    position: relative;
+}
+input-wrapper > span{
+    position: absolute;
+    float: left;
+    margin-left: -10px;
+
+    
+}
+
+.btn{
+    margin-top: 10px;
+    border-radius: 15px;
+    height: 30px;
+    margin-right: 30px;
+    width: 130px;
+}
+
+
+.btn:hover{
+    background-color: lightcoral;
+    color: red;
+}
+
+#app-dropdown{
+    
+    width: 100px;
+    text-align: center;
+    padding: 28px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.2);
+}

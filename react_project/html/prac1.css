@@ -1,0 +1,267 @@
+/*
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.contain{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: cyan;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.f1{
+    width: 250px;
+    height: 400px;
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    
+    
+}
+
+.f1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transform: scale(0.75);
+}
+
+.btn{
+    height: 40px;
+    width: 100px;
+}
+
+*/
+
+/*
+
+#trans{
+    height: 400px;
+    width: 400px;
+    background-color: cyan;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50%;
+    animation-name: fly;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+
+}
+
+div:hover{
+    border-radius: 200px;
+    background-color: darkblue;
+    animation-play-state: paused;
+}
+
+@keyframes colchange{
+    0%{
+        background-color: red;
+        transform: rotateZ(0deg);
+    }
+    25%{
+        background-color: yellow;
+        transform: rotateZ(90deg);
+    }
+    50%{
+        background-color: green;
+        transform: rotateZ(180deg);
+    }
+    75%{
+        background-color: blue;
+        transform: rotateZ(270deg);
+    }
+    100%{
+        background-color: black;
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes fly{
+    0%{
+        transform: translate(-50%,0);
+    }
+    50%{
+        transform: translate(-50%,-50%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+*/
+/*
+grid css
+
+.deku{
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 5px;
+    
+    margin-bottom: 5px;
+}
+
+img{
+    margin-bottom: 10px;
+}
+*/
+
+/*
+body{
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.header{
+    
+    background-color: red;
+    padding: 24px;
+    text-align: center;
+    grid-area: header;
+
+
+
+    
+}
+
+
+.sidebar{
+    padding: 24px;
+    background-color: blue;
+    grid-area: sidebar;
+    height: 500px;
+    
+
+}
+
+.media{
+    padding: 24px;
+    background-color: green;
+    grid-area: media;
+    height: 500px;
+
+}
+
+.rightbar{
+    padding: 24px;
+    background-color: yellow;
+    grid-area: rightbar;
+    height: 500px;
+}
+
+.footer{
+    padding: 24px;
+    background-color: orange;
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header' 
+    'sidebar media media media media rightbar'
+    'footer footer footer footer footer footer';
+}
+*/
+
+/*goldline css
+body{
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+
+
+#headgold{
+    background-color: gold;
+    height: 130px;
+    width: 100%;
+    
+    
+}
+
+
+#mainp{
+    background-color: crimson;
+    height: 490px;
+    width: 100%;
+    
+    
+
+}
+
+.err {
+    display: inline-block;
+    position: relative;
+    margin-left: 150px;
+    color: ivory;
+    line-height: 1;
+  }
+  .err:before {
+    content: "~~~~~~~~~~~~~~~~~~~~";
+    font-size: 1.4em;
+    font-weight: 700;
+    font-family: Times New Roman, Serif;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: -1px;
+    overflow: hidden;
+  }
+*/
+/*
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#bg-img{
+    height:fit-content;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#countdown{
+    margin-top: -1000px;
+    text-align: center;
+    font-size: 1000px;
+    position:fixed;
+    
+}
+*/
+
+
+#btn{
+    font-size: 40px;
+    width: 200px;
+    height: 100px;
+}
+
+.small{
+    font-size: 50px;
+}
+
+.big{
+    font-size: 100px;
+}

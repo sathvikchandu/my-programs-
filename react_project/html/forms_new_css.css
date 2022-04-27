@@ -1,0 +1,35 @@
+#box{
+    margin-top: -30px;
+    margin-left: 200px;
+    background-color: cornflowerblue;
+    margin-right: 200px;
+    height: 550px;
+
+}
+
+#Username{
+    height: 40px;  
+    width: 250px;
+    margin-top: -30px;
+    
+    
+}
+
+#password{
+    height: 40px;  
+    width: 250px;
+    
+    
+}
+
+#Email{
+    height: 40px;  
+    width: 250px;
+    
+    
+}
+
+#submit{
+    margin-left: 430px;
+
+}
